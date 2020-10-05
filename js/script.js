@@ -98,10 +98,9 @@ function printQuote() {
   return document.getElementById('quote-box').innerHTML =  displayQuote;
 }
 
-
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-// document.getElementById('load-quote'},.addEventListener("click", printQuote, false},
+document.getElementById('load-quote').addEventListener("click", printQuote, false);
