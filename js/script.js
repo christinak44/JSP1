@@ -79,7 +79,6 @@ function getRandomQuote() {
 ***/
 function printQuote() {
   let quote = getRandomQuote();
-  let quoteID = quote.id;
   let displayQuote = `<p class="quote"> ${quote.quote} </p><p class="source"> ${quote.source}`;
   if (quote.citation) {
     displayQuote += `<span class="citation"> ${quote.citation} </span>`;
