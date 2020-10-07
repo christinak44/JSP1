@@ -74,22 +74,12 @@ function getRandomQuote() {
 }
 
 
-
 /***
  * `printQuote` function
 ***/
 function printQuote() {
-  const seenQuotes = {};
   let quote = getRandomQuote();
-  while(seenQuotes[quote.id]){
-    //Only add to seenQuotes if this quote ID isn't there
-    if(!seenQuotes[quote.id]){
-      seenQuotes[quote.id] = true;
-    } else {
-      //call getRandomQuote again if it's an already seen quote
-      quote = getRandomQuote();
-    }
-  }
+  let quoteID = quote.id;
   let displayQuote = `<p class="quote"> ${quote.quote} </p><p class="source"> ${quote.source}`;
   if (quote.citation) {
     displayQuote += `<span class="citation"> ${quote.citation} </span>`;
