@@ -9,7 +9,8 @@ project 1 - A Random Quote Generator
 
 /*** 
  * `quotes` array 
-***/
+ * This is a conversion of my php project; additional elements commented out for later use. Only attempting 'meets expectation' at this time.
+ * ***/
 //Homer Simpson quotes from screenrant.com
 const quotes = [
   {
@@ -65,7 +66,7 @@ const quotes = [
 // console.log(quotes);
 
 /***
- * `getRandomQuote` function
+ * `getRandomQuote` function this pulls an index randomly from the quote object nd returns the associated elements
 ***/
 function getRandomQuote() {
  let randomQuote = Math.floor( Math.random() * quotes.length );
@@ -75,7 +76,7 @@ function getRandomQuote() {
 
 
 /***
- * `printQuote` function
+ * `printQuote` function provides HTML formatting to the quote elements identified.
 ***/
 function printQuote() {
   let quote = getRandomQuote();
